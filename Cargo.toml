@@ -14,3 +14,5 @@ dioxus-web = { git = "https://github.com/dioxuslabs/dioxus" }
 lto = true
 panic = "abort"
 opt-level = 'z'
+strip = true
+codegen-units = 1
