@@ -1,0 +1,16 @@
+[package]
+name = "tiny-dioxus"
+version = "0.1.0"
+authors = ["Evan Almloff <ealmlof1@stumail.jccc.edu>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dioxus = { git = "https://github.com/dioxuslabs/dioxus" }
+dioxus-web = { git = "https://github.com/dioxuslabs/dioxus" }
+
+[profile.release]
+lto = true
+panic = "abort"
+opt-level = 'z'
