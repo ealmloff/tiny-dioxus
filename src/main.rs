@@ -2,13 +2,5 @@
 use dioxus::prelude::*;
 
 fn main() {
-    dioxus_web::launch(App);
-}
-
-fn App(cx: Scope) -> Element {
-    render! {
-        div {
-            "Hello world"
-        }
-    }
+    dioxus_web::launch::launch_cfg(|| rsx! { "hello world!" }, Default::default())
 }
